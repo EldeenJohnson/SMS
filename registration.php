@@ -1,6 +1,9 @@
 <?php 
     $title = 'registration';
-    require_once 'includes/header.php'; ?>
+    require_once 'includes/header.php';
+    require_once 'db/conn.php';
+    $results = $crud->getGender(); 
+    ?>
 
 <h1 class="text-center text-info">Register Here!</h1>
 <form method="post" enctype="multipart/form-data" action="success.php">
@@ -21,14 +24,19 @@
             <label for="gender" class="input-group-text">Gender</label>
             <select required class="form-control" id="gender" name="gender">
             <option selected class="form-text text-muted">Select One</option>
-              
+
+            <?php while ($r = $results->fetch(PDO::FETCH_ASSOC)){?>
+                    <option value="<?php echo $r['gender_id'] ?>">
+                    <?php echo $r['name']; ?></option>
+                <?php } ?>
+
             </select>
         </div>
         <div class="mb-3">
             <label for="phone" class="form-label">Contact Number</label>
             <input required type="text" class="form-control" id="phone" name="phone" aria-describedby="phoneHelp">
-            <div id="phoneHelp" class="form-text">We'll never share your phone number with anyone else.
-        </div>
+            <div id="phoneHelp" class="form-text">We'll never share your phone number with anyone else.</div>
+            </div>
         <div class="mb-3">
             <label for="email" class="form-label">Email address</label>
             <input required type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
@@ -38,7 +46,7 @@
             <input type="file" accept="image/*" class="form-control" id="avatar" name="avatar">
             <label class="input-group-text" for="avatar">Upload</label>  
         </div>
-        <div  class="form-text text-danger">File Upload is Optional</div>  
+        <div  class="form-text text-warning">File Upload is Optional</div>  
         <br>
         <div class="d-grid gap-2">
             <button type="submit" name="submit" class="btn btn-primary btn-block">Submit</button>

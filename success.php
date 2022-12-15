@@ -2,7 +2,7 @@
     $title = 'Success';
     require_once 'includes/header.php';
     require_once 'db/conn.php';
-    //require_once 'sendemail.php';
+    require_once 'sendemail.php';
     
 
     if(isset($_POST['submit'])){
@@ -27,7 +27,7 @@
 
         if($isSuccess){
             echo '<h1 class="text-center text-success"> You Have Been Registered!</h1>';
-          //  SendEmail::SendMail($email, 'Welcome to IT Conference', 'You have successfully registered for the IT Conference');
+            SendEmail::SendMail($email, 'Welcome to ABC Academy', 'You have successfully registered for ABC Academy');
             include 'includes/successmessage.php';
         }
         else{

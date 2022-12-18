@@ -2,7 +2,31 @@
 </br>
 </br>
 </br>
+</br>
+</br>
+</br>
 <div id="footer" class="p-3 mb-0 mt-5 bg-secondary text-info fixed-bottom">
+  <div class="container text-center">
+      <div class="social_container">
+
+        <div class="social-box">
+          <a href="">
+            <img src="images/fb.png" alt="">
+          </a>
+
+          <a href="">
+            <img src="images/twitter.png" alt="">
+          </a>
+          <a href="">
+            <img src="images/linkedin.png" alt="">
+          </a>
+          <a href="">
+            <img src="images/instagram.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+<br>
         <p class="text-center">Copyright &copy; - ABC Academy <?php echo date('Y'); ?></p>
     </div>
     

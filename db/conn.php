@@ -7,8 +7,8 @@
     $charset = 'utf8mb4';*/
 
     //remote database connection
-    $host = 'remotemysql.com';
-    $db = 'sql364.main-hosting.eu';
+    $host = 'sql364.main-hosting.eu';
+    $db = 'u534375228_sms_db';
     $user ='u534375228_ejohnson';
     $pass = '3N1gma1984';
     $charset = 'utf8mb4';

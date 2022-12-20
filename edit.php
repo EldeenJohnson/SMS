@@ -36,7 +36,7 @@
             <label for="gender" class="form-label">Gender</label>
             <select class="form-control" id="gender" name="gender">
 
-           <!-- <option selected><?php //echo $registrant['name'] ?>-->
+           <!-- <option selected><//?php echo $registrant['name'] ?>-->
 
                 <?php while ($r = $results->fetch(PDO::FETCH_ASSOC)){?>
                     <option value="<?php echo $r['gender_id'] ?>" <?php if($r['gender_id'] == $registrant['gender_id']) echo 'selected'?>>
@@ -55,7 +55,12 @@
             <input type="email" class="form-control" value="<?php echo $registrant['emailaddress'] ?>" id="email" name="email" aria-describedby="emailHelp">
             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
-    <div >      
+      <!-- <div class="input-group mb-3">        
+            <input type="file" value="<//?php echo $registrant['avatar_path'] ?>" accept="image/*" class="form-control" id="avatar" name="avatar">
+            <label class="input-group-text" for="avatar">Update</label>  
+        </div>
+        <div  class="form-text text-warning">File Upload is Optional</div> <br>
+    <div >-->      
             <button type="submit" name="submit" class="btn btn-outline-secondary">Return to List</button>
             <button type="submit" name="submit" class="btn btn-success">Save</button>
     </div>

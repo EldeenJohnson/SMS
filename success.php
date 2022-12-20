@@ -22,6 +22,7 @@
 
 
         //call function to insert and track if success / not
+        //$emailVal = $crud->emailExists($email);
         $isSuccess = $crud->insertRegistrants($fname, $lname, $dob, $email, $contact, $gender, $destination);
         $genderName = $crud->getgenderById($gender);
 
@@ -41,7 +42,7 @@
    <!-- <h1 class="text-center text-success">You have been Registered</h1> -->
 
     <div class="card  border-success mb-3" style="width: 25rem;">
-    <img src="images/celebrate-success.jpg" class="card-img-top" alt="...">
+    <img src="images/success.jpg" class="card-img-top" alt="...">
     <div class="card-body">
         <h5 class="card-title">
  

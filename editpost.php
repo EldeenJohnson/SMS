@@ -13,9 +13,16 @@ if(isset($_POST['submit']))
     $email = $_POST['email'];
     $contact = $_POST['phone'];
     $gender = $_POST['gender'];
+   // $a_path = $_POST['avatar_path'];
+
+   /* $orig_file = $_FILES["avatar"]["tmp_name"];
+        $ext = pathinfo($_FILES["avatar"]["name"], PATHINFO_EXTENSION);
+        $target_dir = 'uploads/';
+        $destination = "$target_dir$contact.$ext";
+        move_uploaded_file($orig_file,$destination);*/
 
     //call function to update and track if success / not
-    $result = $crud->editRegistrant($id, $fname, $lname, $dob, $email, $contact, $gender);
+    $result = $crud->editRegistrant($id, $fname, $lname, $dob, $email, $contact, $gender, $a_path);
 
     if($result){
         header("location: viewrecords.php");

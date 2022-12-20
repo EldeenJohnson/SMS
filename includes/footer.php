@@ -13,7 +13,6 @@
           <a href="">
             <img src="images/fb.png" alt="">
           </a>
-
           <a href="">
             <img src="images/twitter.png" alt="">
           </a>

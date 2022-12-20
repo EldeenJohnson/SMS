@@ -36,9 +36,6 @@ include_once 'includes/session.php'
           <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="news.php">News</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link active text-warning" aria-current="page" href="registration.php"><b>Registration</b></a>
         </li>
         <li class="nav-item">

@@ -13,7 +13,7 @@
         $id = $_GET['id'];
         $result = $crud->getRegistrantDetails($id);
 ?>
-
+<h3 class="text-success">Profile Page</h3>
 <br>
 <br>
 <div class="card  border-success mb-3" style="width: 25rem;">

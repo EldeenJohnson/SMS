@@ -7,29 +7,29 @@
 <div class="container overflow-hidden">
 <div class="row gx-5">
 <div class="col">
-<form>
-    <div class="form-group ">
+<form method="post" enctype="multipart/form-data" action="contactsuccess.php">
+    <div class="form-group">
       <label>First Name</label>
-      <input type="text" class="form-control" id="firstname">
+      <input required type="text" class="form-control" id="firstname">
     </div><br>
     <div class="form-group ">
       <label>Last Name</label>
-      <input type="text" class="form-control" id="lastname">
+      <input required type="text" class="form-control" id="lastname">
     </div><br>
   <div class="form-group ">
-      <label for="inputEmail4">Phone</label>
-      <input type="phone" class="form-control" id="Phone">
+      <label for="inputPhone">Phone</label>
+      <input required type="phone" class="form-control" id="Phone">
   </div><br>
   <div class="form-group ">
       <label for="inputEmail4">Email</label>
-      <input type="email" class="form-control" id="Email">
+      <input required type="email" class="form-control" id="email" name="email">
   </div><br>
   <div class="form-group ">
     <label for="exampleFormControlTextarea1">Comment or Message</label>
     <textarea class="form-control" id="Textarea" rows="4"></textarea>
   </div>
 <br>
-  <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+  <button type="submit" name="submit" class="btn btn-primary btn-lg">Submit</button>
 </form>
 </div>
 <div class="col-md-6 col">
